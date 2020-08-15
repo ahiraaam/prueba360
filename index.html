@@ -1,69 +1,73 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"
+    ></script>
     <style>
-    #panorama {
+      #panorama {
         width: 600px;
         height: 400px;
-    }
+      }
     </style>
-</head>
-<body>
-
-<div id="panorama"></div>
-<script>
-pannellum.viewer('panorama', {   
-    "default": {
-        "firstScene": "01",
-        //"author": "Matthew Petroff",
-        "sceneFadeDuration": 1000
-    },
-
-    "scenes": {
-        "01": {
-            "title": "Mason Circle",
-            "hfov": 110,
-            "pitch": -3,
-            "yaw": 117,
-            "type": "equirectangular",
-            "panorama": "https://i.ibb.co/W54krvT/img1.jpg",
-            "hotSpots": [
-                {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
-                    "type": "scene",
-                    "text": "Spring House or Dairy",
-                    "sceneId": "02"
-                }
-            ]
+  </head>
+  <body>
+    <div id="panorama"></div>
+    <script>
+      pannellum.viewer("panorama", {
+        default: {
+          firstScene: "01",
+          //"author": "Matthew Petroff",
+          sceneFadeDuration: 1000,
         },
 
-        "02": {
-            "title": "Spring House or Dairy",
-            "hfov": 110,
-            "yaw": 5,
-            "type": "equirectangular",
-            "panorama": "https://pannellum.org/images/alma.jpg",
-            "hotSpots": [
-                {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
-                    "type": "scene",
-                    "text": "Mason Circle",
-                    "sceneId": "01",
-                    "targetYaw": -23,
-                    "targetPitch": 2
-                }
-            ]
-        }
-    }
-});
-</script>
+        scenes: {
+          "01": {
+            title: "Mason Circle",
+            hfov: 110,
+            pitch: -3,
+            yaw: 117,
+            type: "equirectangular",
+            panorama: "https://i.ibb.co/W54krvT/img1.jpg",
+            hotSpots: [
+              {
+                pitch: -2.1,
+                yaw: 132.9,
+                type: "scene",
+                text: "Spring House or Dairy",
+                sceneId: "02",
+              },
+            ],
+          },
 
-</body>
+          "02": {
+            title: "Spring House or Dairy",
+            hfov: 110,
+            yaw: 5,
+            type: "equirectangular",
+            panorama: "https://pannellum.org/images/alma.jpg",
+            hotSpots: [
+              {
+                pitch: -0.6,
+                yaw: 37.1,
+                type: "scene",
+                text: "Mason Circle",
+                sceneId: "01",
+                targetYaw: -23,
+                targetPitch: 2,
+              },
+            ],
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
