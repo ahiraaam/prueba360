@@ -11,7 +11,7 @@ main {
   grid-template-rows:
     80px
     1fr
-    50px;
+    40px;
   grid-template-areas:
     "my-header "
     "my-section"
@@ -54,7 +54,7 @@ footer {
     grid-template-rows:
       100px
       1fr
-      80px;
+      50px;
     grid-template-areas:
       "my-header"
       "my-section"
@@ -65,7 +65,7 @@ footer {
   main {
     grid-template-columns: 100%;
     grid-template-rows:
-      80px
+      70px
       1fr
       50px;
     grid-template-areas:
