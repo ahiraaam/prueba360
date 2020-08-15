@@ -21,7 +21,7 @@ main {
 
 header {
   grid-area: my-header;
-  background-color: #1b3b6f;
+  background-color: #3662a8;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -31,8 +31,11 @@ header {
 
 section {
   grid-area: my-section;
-  background-color: #d1e1ec;
   overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 footer {
@@ -44,7 +47,7 @@ footer {
 
 #panorama {
   width: 98%;
-  height: 100%;
+  height: 90%;
   margin: auto;
 }
 
@@ -52,7 +55,7 @@ footer {
   main {
     grid-template-columns: 1fr;
     grid-template-rows:
-      100px
+      70px
       1fr
       50px;
     grid-template-areas:
@@ -70,10 +73,11 @@ footer {
       50px;
     grid-template-areas:
       "my-header my-header my-header"
-      "my-section "
+      "my-section"
       "my-footer my-footer my-footer";
   }
   #panorama {
     width: 80%;
+    height: 100%;
   }
 }
