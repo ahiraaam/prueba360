@@ -11,7 +11,7 @@ pannellum.viewer("panorama", {
       title: "Entrada",
       hfov: 110,
       pitch: -3,
-      yaw: 117,
+      yaw: 180,
       type: "equirectangular",
       panorama: "https://i.imgur.com/AFxVnbD.jpg",
       hotSpots: [
