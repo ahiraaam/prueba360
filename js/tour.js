@@ -1,6 +1,6 @@
 pannellum.viewer("panorama", {
   default: {
-    firstScene: "15",
+    firstScene: "01",
     autoLoad: true,
     //"author": "Matthew Petroff",
     sceneFadeDuration: 1000,
