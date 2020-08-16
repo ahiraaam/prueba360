@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/hotspots.css" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta charset="utf-8" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour</title>
     <link
       rel="stylesheet"
@@ -32,54 +32,6 @@
         <p>Developed by: Ahiram Cruz and Juan C. Pichardo</p>
       </footer>
     </main>
-    <script>
-      pannellum.viewer("panorama", {
-        default: {
-          firstScene: "01",
-          //"author": "Matthew Petroff",
-          sceneFadeDuration: 1000,
-          autoLoad: true,
-        },
-
-        scenes: {
-          "01": {
-            title: "Mason Circle",
-            hfov: 110,
-            pitch: -3,
-            yaw: 117,
-            type: "equirectangular",
-            panorama: "https://i.imgur.com/AFxVnbD.jpg",
-            hotSpots: [
-              {
-                pitch: -2.1,
-                yaw: 132.9,
-                type: "scene",
-                text: "Spring House or Dairy",
-                sceneId: "02",
-              },
-            ],
-          },
-
-          "02": {
-            title: "Spring House or Dairy",
-            hfov: 110,
-            yaw: 5,
-            type: "equirectangular",
-            panorama: "https://pannellum.org/images/alma.jpg",
-            hotSpots: [
-              {
-                pitch: -0.6,
-                yaw: 37.1,
-                type: "scene",
-                text: "Mason Circle",
-                sceneId: "01",
-                targetYaw: -23,
-                targetPitch: 2,
-              },
-            ],
-          },
-        },
-      });
-    </script>
+    <script type="text/javascript" src="./js/tour.js"></script>
   </body>
 </html>
