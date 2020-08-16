@@ -80,6 +80,13 @@ pannellum.viewer("panorama", {
           //"createTooltipArgs": "Inicio",
           sceneId: "04",
         },
+        {
+          pitch: 14.1,
+          yaw: 10,
+          type: "info",
+          text: "Bienvenidos a Pedrote Marketing",
+          URL: "https://youtu.be/LpXNvuaZYIU",
+        },
       ],
     },
 
@@ -108,6 +115,13 @@ pannellum.viewer("panorama", {
           //"createTooltipArgs": "Inicio",
           sceneId: "05",
         },
+        {
+          pitch: 14.1,
+          yaw: 160,
+          type: "info",
+          text: "Bienvenidos a Pedrote Marketing",
+          URL: "https://youtu.be/LpXNvuaZYIU",
+        },
       ],
     },
 
@@ -135,6 +149,12 @@ pannellum.viewer("panorama", {
           createTooltipFunc: hotspot,
           createTooltipArgs: "Oficinas",
           sceneId: "06",
+        },
+        {
+          pitch: 14.1,
+          yaw: 340,
+          type: "info",
+          text: "Bienvenidos a Pedrote Marketing",
         },
       ],
     },
