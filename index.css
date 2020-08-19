@@ -21,7 +21,7 @@ main {
 
 header {
   grid-area: my-header;
-  background-color: #3662a8;
+  background-color: red;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@ section {
 
 footer {
   grid-area: my-footer;
-  background-color: #1b3b6f;
+  background-color: rgb(211, 41, 41);
   color: #e8e8e8;
   text-align: center;
 }
